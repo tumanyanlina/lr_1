@@ -10,8 +10,8 @@ def multiply_numbers(a, b):
 
 # Пример использования
 if __name__ == "__main__":
-    x = 10
-    y = 5
+    x = 15
+    y = 20
     
     result_add = add_numbers(x, y)
     result_multiply = multiply_numbers(x, y)

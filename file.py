@@ -42,4 +42,5 @@ if __name__ == "__main__":
     print(f"Вычитание: {x} - {y} = {result_subtract}")
     print(f"Деление: {x} / {z} = {result_divide}")
     print(f"Степень: {x} ^ {z} = {result_power}")
+
     

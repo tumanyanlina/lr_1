@@ -1,8 +1,8 @@
 try:
-    text = input("Введите числа через пробел: ")
+    text = input("Enter numbers: ")
     numbers = []
     current_number = ""
-
+    
     for char in text:
         if char == " ":
             if current_number != "":
@@ -10,16 +10,16 @@ try:
                 current_number = ""
         else:
             current_number += char
-
+    
     if current_number != "":
         numbers.append(int(current_number))
-
+    
     min = numbers[0]
     for number in numbers:
         if number < min:
             min = number
-
-    print("Минимальный элемент:", min)
-
+            
+    print("Min value:", min)
+    
 except ValueError:
-    print("Ошибка: пожалуйста, вводите только числа.")
+    print("Error: Please enter numbers only!")

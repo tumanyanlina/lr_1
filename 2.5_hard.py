@@ -3,7 +3,7 @@ def word_counter(file_name: str):
         content = f.read()
 
     if not content.strip():
-        return "Файл пуст"
+        return "Ошибка: файл пуст"
 
     for char in "(),.!?;:-—\n":
         content = content.replace(char, " ")
@@ -12,7 +12,6 @@ def word_counter(file_name: str):
     words = content.split()
 
     counter = {}
-
     for word in words:
         counter[word] = counter.get(word, 0) + 1
 
@@ -20,5 +19,9 @@ def word_counter(file_name: str):
 
 
 file_path = r'c:\Users\tuman\OneDrive\Desktop\МиТП_лабы\python\file.txt'
+result = word_counter(file_path)
 
-print("Частота слов в файле:", word_counter(file_path))
+if isinstance(result, dict):
+    print("Частота слов в файле:", result)
+else:
+    print(result)

@@ -19,3 +19,4 @@ books.insert({"id": 2, "title": "Преступление и наказание"
 books.insert({"id": 2, "title": "Тихий Дон", "author": "М.А.Шолохов"})
 
 print(books.select(id=1))
+print(books.select(title = "Тихий Дон"))
